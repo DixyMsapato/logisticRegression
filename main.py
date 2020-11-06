@@ -125,7 +125,7 @@ def costFunction(X,y,theta):
     m = y.shape[0]
     #Let h denote the hypothethis
     h =  vectSigmoid(X.dot(theta))
-    J = (-1 / m) * numpy.sum((numpy.transpose(y)).dot(vectLog(h))+(numpy.transpose((1-y))).dot(vectLog(1-h)));
+    J = (-1 / m) *(numpy.transpose(y)).dot(vectLog(h))+(numpy.transpose((1-y))).dot(vectLog(1-h));
     return J
 
 #X = featureNormalise(X)
